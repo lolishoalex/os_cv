@@ -1,0 +1,9 @@
+This is a file for testing branches of the repository.
+git branche // list of all branches
+git branch develop // create branch develop
+git branch -d develop // delete branch develop
+git checkout develop // switch to another branch
+git push origin develop // pull branch develop to origin (remote) repositity
+ merge:
+git checkout main // switch to branch to merge another branch
+git merge develop // merg branch develop to switched last step branch
