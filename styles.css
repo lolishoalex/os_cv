@@ -41,12 +41,20 @@ textarea {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 .logo {
   font-size: 30px;
 }
 .nav-links a {
 }
+
 .menu {
   display: flex;
   font-size: 18px;
@@ -56,6 +64,7 @@ textarea {
   padding: 5px 15px;
 }
 .menu li a:hover {
+  color: #646464;
 }
 #checkbox_toggle {
   display: none;
@@ -94,20 +103,20 @@ textarea {
     max-height: 0;
     overflow: hidden;
     position: absolute;
-    background-color: var(--grey);
+    background-color: var(--white);
     text-align: center;
     right: 0;
     /* left: 0; */
-    margin-top: 22px;
+    margin-top: 16px;
   }
   .menu li a {
-    /*color: var(--grey3);*/
+    color: #646464;
     display: block;
     padding: 15px;
   }
   .menu li {
     transition: all 0.3s;
-    background-color: var(--royalblue);
+    background-color: #fff;
   }
   .menu li:hover {
     /*background-color: var(--grey2);*/
@@ -145,7 +154,7 @@ textarea {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid rgb(100, 100, 100);
   /* border: none; */
   padding: 10px 0;
   margin: 0;
@@ -164,7 +173,7 @@ textarea {
   outline: none;
 }
 .c-hamburger-line span {
-  background-color: var(--white);
+  background-color: #646464;
   display: block;
   height: 2px;
   position: relative;
@@ -175,7 +184,7 @@ textarea {
 
 .c-hamburger-line span::before,
 .c-hamburger-line span::after {
-  background-color: var(--white);
+  background-color: #646464;
   content: "";
   display: block;
   position: absolute;
@@ -205,6 +214,7 @@ textarea {
   display: block;
   max-height: 100%;
   transition: all 0.3s;
+  overflow: visible;
 }
 
 @media (max-width: 768px) {
@@ -218,7 +228,7 @@ textarea {
   /* width: 750px; без адаптивности */
   margin: auto; /* адаптивная ширина */
   /* padding-top: 30px; */
-  padding: 30px 15px 0 15px;
+  padding: 85px 15px 0 15px;
 }
 
 .home_button {
@@ -228,7 +238,7 @@ textarea {
   bottom: 10px;
   width: 60px;
   height: 60px;
-  background: #9fbed9;
+  background: #b3b3b3;
   text-align: center;
   cursor: pointer;
   border-radius: 40px;
@@ -278,8 +288,8 @@ a:active {
 } */
 
 .main-photo {
-  width: 200px;
-  /* border-radius: 28px; */
+  width: 130px;
+  border-radius: 0px;
   box-shadow: 0px 0px 8px rgb(100, 100, 100);
 }
 
@@ -315,14 +325,13 @@ a:active {
 }
 
 .list {
-  padding: 0px 25px;
+  padding: 0px 0px;
   list-style: none;
 }
 
 .list > li {
   color: #86898f;
   margin-bottom: 10px;
-  border-bottom: 1px solid #f3f3f3;
 }
 
 .link-list {
@@ -332,7 +341,6 @@ a:active {
 .link-list li {
   margin-bottom: 10px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #f3f3f3;
 }
 .link-list a {
   color: #86898f;
@@ -344,7 +352,6 @@ a:active {
 .sublist li {
   color: #86898f;
   margin-bottom: 10px;
-  /* border-bottom: 1px solid #f3f3f3; */
 }
 
 table,
@@ -414,9 +421,12 @@ td:nth-child(3) {
 
 .card {
   /* background: lightgray; */
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 15px;
   margin: 15px 0 15px 0;
+}
+.skills {
+  padding: 15px 0 0 0;
 }
 .card-info {
   margin-bottom: 15px;
@@ -512,4 +522,12 @@ td:nth-child(3) {
 }
 .form-btn:hover {
   opacity: 0.9;
+}
+
+:target {
+  scroll-margin-top: 70px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
