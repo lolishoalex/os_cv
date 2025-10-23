@@ -52,8 +52,8 @@ textarea {
 .logo {
   font-size: 30px;
 }
-.nav-links a {
-}
+/* .nav-links a {
+} */
 
 .menu {
   display: flex;
@@ -118,9 +118,9 @@ textarea {
     transition: all 0.3s;
     background-color: #fff;
   }
-  .menu li:hover {
-    /*background-color: var(--grey2);*/
-  }
+  /* .menu li:hover {
+    background-color: var(--grey2);
+  } */
   /* как обратиться к родителю */
   /* menu:has(li:focus) {} */
   .menu li:focus ~ .menu {
@@ -254,7 +254,7 @@ textarea {
 .home_button:before {
   content: "\1F861";
   font-family: Linearicons-Free;
-  speak: none;
+  /* speak: none; */
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -267,9 +267,9 @@ textarea {
   line-height: 60px;
 }
 
-h1,
+/* h1,
 h2 {
-}
+} */
 
 a {
   text-decoration: none;
@@ -325,8 +325,8 @@ a:active {
   /* word-spacing: 15px; */
 }
 
-.info-text {
-}
+/* .info-text {
+} */
 
 .list {
   padding: 0px 0px;
@@ -373,15 +373,15 @@ td {
   text-align: left;
   padding: 10px;
 }
-.table tr:nth-child(even) {
-  /*background-color: #e5ffe7;*/
-}
+/* .table tr:nth-child(even) {
+  background-color: #e5ffe7;
+} */
 .table td {
   padding: 10px;
 }
-.table td:nth-child(1) {
-  //font-weight: bold;
-}
+/* .table td:nth-child(1) {
+  font-weight: bold;
+} */
 .table td:nth-child(2),
 td:nth-child(3) {
   color: #86898f;
@@ -484,11 +484,11 @@ td:nth-child(3) {
   /* font-size: 18px; */
 }
 
-.form-group input:focus,
+/* .form-group input:focus,
 .form-group textarea:focus {
-  /* border: 1px solid #ccc; */
-  /*background: #f1f1f1;*/
-}
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+} */
 
 .form-row {
   display: flex;
